@@ -37,4 +37,15 @@ for(let i=1;i<=6;i++){
 }
 
 //while loop
+//initialisation 
+//while(condn)
+//{
+//loop logic
+//updation
+//}
 
+let i=1;
+while(i<=10){
+    console.log("Rajnandani");
+    i++;
+}
