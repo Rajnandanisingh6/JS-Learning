@@ -45,7 +45,35 @@
 // console.log(obj1.ht);
 
 //default parameter -> allow to we function with default parameters
-function sayName(myName ="Riya"){ // yaha par riya default value ki tarah kam kar rahi hai
-    console.log("My Name is: ",myName);
+// function sayName(myName ="Riya"){ // yaha par riya default value ki tarah kam kar rahi hai
+//     console.log("My Name is: ",myName);
+// }
+// sayName("Raj"); // undefined output because hamne value pass hi nahi kiye hai
+
+// function sayName(fName="Raj",lName = fName.toUpperCase()){
+//     console.log("My Name is: ",fName," ",lName);
+// }
+// sayName();
+
+//-----------------------------------------
+// function solve(value){
+//     console.log("HELLO JI",value);
+// }
+// solve("Queen");
+
+//---------------------------------
+//default parameters with object
+// function solve(value={age:14,wt:87,ht:189}){
+//     console.log("HELLO JI",value);
+// }
+// solve();
+
+//--------------------------------------------
+function getAge(){
+    return 90;
 }
-sayName("Raj"); // undefined output because hamne value pass hi nahi kiye hai
+
+function utility(name="Raj",age=getAge()){
+    console.log(name, " ",age);
+}
+utility();
