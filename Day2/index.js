@@ -18,4 +18,15 @@
 //Math.round(2.2)
 
 
+//--------------------------
+//String
+//concatenation
+//combine strings together
+//typeof 
+//hello + 3 --> known as type coercion
+//automatic type conversion
+//Interpolation = insert value directly into a string
+
+
+
 
