@@ -28,10 +28,35 @@ const myFunction = function(){
     console.log("Hello World");
 }
 
-console.log(typeof bigNumber);
-console.log(typeof score);
-console.log(typeof isLoggedIn);
-console.log(typeof myFunction);
+// console.log(typeof bigNumber);
+// console.log(typeof score);
+// console.log(typeof isLoggedIn);
+// console.log(typeof myFunction);
 
+//+++++++++++++++++++++++++++++++++++++++++++
+
+
+//stack(primitive) ,Heap memory(Non-primitive)
+
+//primitive data types are stored in stack memory
+//reference data types are stored in heap memory and reference to that memory is stored in stack memory
+
+let myYoutubeName="techMinute";
+
+let anotherName=myYoutubeName;
+anotherName="chaiaurtech";
+
+
+// console.log(myYoutubeName);
+// console.log(anotherName);
+
+let userOne ={
+    email:"user@google.com",
+    upi:"user@upi"
+}
+let userTwo=userOne;
+userTwo.email="raj@google.com"
+console.log(userOne.email);
+console.log(userTwo.email);
 
 
