@@ -11,10 +11,10 @@ const gameName =new String('Nandani-hc-com')
 // console.log(gameName.__proto__);
 
 
-// console.log(gameName.length);
-// console.log(gameName.toUpperCase());
-// console.log(gameName.charAt(3));
-// console.log(gameName.indexOf('d'));
+console.log(gameName.length);
+console.log(gameName.toUpperCase());
+console.log(gameName.charAt(3));
+console.log(gameName.indexOf('d'));
 
 const newString=gameName.substring(0, 4);
 //console.log(newString);
@@ -23,8 +23,8 @@ const anotherString=gameName.slice(-6, 4);
 //console.log(anotherString);
 
 const newStringOne = "  Nandani  ";
-// console.log(newStringOne);
-// console.log(newStringOne.trim());
+console.log(newStringOne);
+console.log(newStringOne.trim());
 
 const url ="https://nandu.com/nandu%20rajput"
 
