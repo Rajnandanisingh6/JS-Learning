@@ -1,24 +1,5 @@
 const contentString="Hello ,JavaScript"
-console.log(contentString.small()); //This is a legacy HTML wrapper method that creates a string
-//  by embedding the original string within an HTML <small> element.
-console.log(contentString.big()); 
-//This method is part of the String object and was used to create a string that embeds the original string within an HTML <big> element.
-//Purpose: It was intended to display text in a larger font size.
-console.log(contentString.strike()); //use of strike method in js all output comes in html formmat 
-console.log(contentString.bold());
-console.log(contentString.italics());
-console.log(contentString.fontsize(5));
-console.log(contentString.fontcolor('red'));
-console.log(contentString.fixed());
-console.log(contentString.link('https://www.google.com'));
-console.log(contentString.anchor('MyAnchor'));
-console.log(contentString.sup());
-console.log(contentString.sub());
-console.log(contentString.toString());
-console.log(contentString.valueOf());
-//The valueOf() method returns the primitive value of a String object. 
-//In most cases, JavaScript automatically converts String objects to primitive string values when needed,
-//  so you rarely need to call this method explicitly.
+
 console.log(contentString.concat(' Nandani',' Rajput'));
 //The concat() method is used to concatenate (join) two or more strings together and returns a new string.
 // It does not modify the original strings.
@@ -38,6 +19,63 @@ console.log(contentString.indexOf('a'));//The indexOf() method returns the index
 // starting the search at fromIndex. Returns -1 if the value is not found.
 console.log(contentString.lastIndexOf('a'));//The lastIndexOf() method returns the index within the calling String object of the last occurrence of the specified value,
 // searching backwards from fromIndex. Returns -1 if the value is not found.
+
+
+console.log(contentString.valueOf());
+//The valueOf() method returns the primitive value of a String object. 
+//In most cases, JavaScript automatically converts String objects to primitive string values when needed,
+//  so you rarely need to call this method explicitly.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+console.log(contentString.small()); //This is a legacy HTML wrapper method that creates a string
+//  by embedding the original string within an HTML <small> element.
+console.log(contentString.big()); 
+//This method is part of the String object and was used to create a string that embeds the original string within an HTML <big> element.
+//Purpose: It was intended to display text in a larger font size.
+console.log(contentString.strike()); //use of strike method in js all output comes in html formmat 
+console.log(contentString.bold());
+console.log(contentString.italics());
+console.log(contentString.fontsize(5));
+console.log(contentString.fontcolor('red'));
+console.log(contentString.fixed());
+console.log(contentString.link('https://www.google.com'));
+console.log(contentString.anchor('MyAnchor'));
+console.log(contentString.sup());
+console.log(contentString.sub());
+console.log(contentString.toString());
+
 console.log(contentString.slice(0,5));//The slice() method extracts a section of a string and returns it as a new string, without modifying the original string.
 console.log(contentString.substring(0,5));//The substring() method returns the part of the string between the start and end indexes, or to the end of the string.
 console.log(contentString.substr(0,5));//The substr() method returns a portion of the string, starting at the specified index and extending for a given number of characters afterwards.
