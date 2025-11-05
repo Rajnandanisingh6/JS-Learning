@@ -24,9 +24,17 @@ if(true){
 //console.log(username); //error because username is not defined in this scope , it is defined in inner scope
 
 
-//+++++++++++++++++++++++
+//+++++++++++++++++++++++ inersting
 
 
 function addone(num){
     return num + 1
 }
+
+addone(5)
+
+const addTwo = function(num){
+    return num + 2
+}
+
+addTwo(5)
