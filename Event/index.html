@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #414141; color: aquamarine;" >
+    <h2>Amazing Image</h2>
+    <ul id="images">
+        <li> <img id="forest" src="https://images.unsplash.com/photo-1603984973710-e915353b35fa?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YW1hemluZyUyMHBpY3R1cmV8ZW58MHx8MHx8fDA%3D" height ="100px " width="100px" alt="forest"></li>
+
+
+        <li><img id="mountain" src="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bW91bnRhaW58ZW58MHx8MHx8fDA%3D" height="100px" width="100px" alt="mountain"></li>
+
+
+        <li><img id="butterfly" src="https://images.unsplash.com/photo-1535068484622-7a077e5aa558?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"height="100px" width="100px" alt="butterfly"></li>
+
+
+        <li><img id="river" src="https://images.unsplash.com/photo-1437482078695-73f5ca6c96e2?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cml2ZXJ8ZW58MHx8MHx8fDA%3D" height="100px" width="100px" alt="River"></li>
+        <li><a style="color: aliceblue;" href="https://google.com" id="google">Google</a></li>
+    </ul>
+</body>
+<script>
+    //document.getElementById('river').onclick = function(){
+   // alert(" click on Beautiful River");
+//}
+
+//attachEvent()
+//jQuery - .on()
+
+//type ,timestamp, defaultPrevented
+// target,toElement,srcElement,currentTarget, 
+//pageX,pageY,clientX,clientY,screenX ,screenY -- interview questions
+// altKey,ctrlKey,shiftKey,button,keyCode
+
+// document.getElementById('river').addEventListener('click', function(){
+//     alert(" click on Beautiful River");
+// });
+
+// document.getElementById('river').addEventListener('click', function(e){
+//     // document.body.style.backgroundColor = "blue";
+//     // document.body.style.color = "white";
+//     console.log(e);
+// },false);
+//event propagation ka do context hote hain 
+//event propagation: bubbling and capturing 
+//event propagation ka default behaviour bubbling hota hai
+
+// bubbling : child to parent
+// capturing : parent to child
+
+
+// document.getElementById('images').addEventListener('click', function(e){
+//     console.log(" clicked inside the ul");
+// },false); // bubbling phase
+
+// document.getElementById('river').addEventListener('click', function(e){
+//     console.log(" clicked on river image");
+//     e.stopPropagation(); // stop bubbling
+// },false); // bubbling phase
+
+
+//Capturing Phase
+// document.getElementById('images').addEventListener('click', function(e){
+//     console.log(" clicked inside the ul");
+// },true); 
+
+// document.getElementById('river').addEventListener('click', function(e){
+//     console.log(" clicked on river image");
+// },true);
+
+
+// document.getElementById('google').addEventListener('click', function(e){
+//     e.preventDefault(); // prevent default action of anchor tag
+//     alert(" Google link is disabled");
+// },false);
+
+// document.getElementById('google').addEventListener('click', function(e){
+//     e.preventDefault(); // prevent default action of anchor tag
+//     e.stopPropagation();
+//     console.log(" clicked on google link");
+// },false);
+
+
+//-------------------------------------------
+
+document.querySelector('#images').addEventListener('click',function(e){
+    console.log(e.target.tagName);
+    if(e.target.tagName === 'IMG'){
+        console.log(e.target.id);
+        //console.log(e.target.parentNode);
+        let removeIt =e.target.parentNode;
+        removeIt.remove();
+    }
+
+    
+    //removeIt.parentNode.removeChild(removeIt);
+})
+
+</script>
+</html>
