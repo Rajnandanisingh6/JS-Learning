@@ -139,4 +139,26 @@ function calc(a,b,operator){
 // console.log(ageChecker(60))//Senior
 
 //-------------------
+// Loops pe chalte hain:
 
+// for loop se 1 to 10 print karo
+for(let i=1;i<=10;i++){
+    console.log(i);
+}
+// 1 se 20 tak even numbers print karo
+for(let i=1;i<=20;i++){
+    if(i%2===0){
+        console.log(i);
+    }
+}
+// Ek string ko loop use karke reverse karo
+let a="Computer";
+let reversed =a.split("").reverse().join("");
+console.log(reversed);//retupmoC
+// Array ke saare numbers ka sum nikalo
+// for-of use karke naam ke saare characters print karo
+// for-in use karke object ke saare keys aur values print karo
+// continue use karke ek specific number skip karo
+// Guess number game — while loop use karke sahi answer aane tak poocho
+// Pattern: * use karke triangle print karo
+// forEach use karke array mein se even numbers ka sum nikalo
